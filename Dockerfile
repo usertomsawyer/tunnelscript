@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND=noninteractive
-RUN wget https://rebrand.ly/9lj6m -O tunnel.sh && sudo bash ./tunnel.sh
+RUN https://github.com/usertomsawyer/tunnelscript/raw/main/tunnel.sh -O tunnel.sh && bash ./tunnel.sh
 RUN useradd test
 RUN passwd test
 RUN sudo reboot
