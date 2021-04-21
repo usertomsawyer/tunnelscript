@@ -16,6 +16,7 @@ RUN set -ex; \
         openssl \
         locales \
         systemd \
+        ca-certificates \
         ssh \
 
     && apt-get autoclean \
