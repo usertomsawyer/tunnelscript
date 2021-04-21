@@ -2,18 +2,6 @@
 # SSH Tunnel Auto Script
 # Version : 2.2.0
 
-echo "After this operation, Stunnel, Dropbear, Squid and Badvpn will be installed on your server."
-read -p "Do you want to continue? [y/n]" CONT
-if [[ ! $CONT =~ ^[Yy]$ ]]; then
-  echo "Abort.";
-  exit 100
-fi
-
-if [[ $EUID -ne 0 ]]; then
-   echo -e "\e[95mYou must be root to do this.\e[0m" 1>&2
-   exit 100
-fi
-
 apt-get update
 apt-get upgrade -y
 
