@@ -18,6 +18,7 @@ RUN set -ex; \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
+RUN dpkg-reconfigure locales
 RUN sudo -s
 RUN sudo timedatectl set-timezone Asia/Colombo
 ADD tunnel.sh /tunnel.sh
