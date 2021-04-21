@@ -1,0 +1,10 @@
+{
+  "name": "Heroku SSH server",
+  "description": "Configuring Heroku Server for SSH Tunnelling",
+  "keywords": ["SSH", "Tunnel"],
+  "env": {
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
