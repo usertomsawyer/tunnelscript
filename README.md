@@ -13,5 +13,5 @@
 
 ## SSH Credentials
 - IP: ```yourappname.herokuapp.com```
-- User    : ```test```
+- User  : ```test```
 - Password: ```test```
