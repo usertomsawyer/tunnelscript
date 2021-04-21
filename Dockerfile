@@ -13,6 +13,7 @@ RUN set -ex; \
         git \
         wget \
         openssl \
+        locales \
         ssh \
 
     && apt-get autoclean \
