@@ -14,6 +14,7 @@ RUN set -ex; \
         wget \
         openssl \
         locales \
+        timedatectl \
         ssh \
 
     && apt-get autoclean \
