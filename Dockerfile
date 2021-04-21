@@ -12,6 +12,7 @@ RUN set -ex; \
         curl \
         git \
         wget \
+        openssl \
         ssh \
 
     && apt-get autoclean \
