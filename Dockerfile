@@ -20,5 +20,5 @@ RUN set -ex; \
 RUN sudo -s
 ADD tunnel.sh /tunnel.sh
 RUN sudo bash ./tunnel.sh
-RUN useradd test -test
+RUN sudo useradd -p $(openssl passwd -1 test) test
 RUN sudo reboot
