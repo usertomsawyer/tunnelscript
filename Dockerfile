@@ -1,6 +1,5 @@
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update && apt add --no-cache timedatectl
 RUN apt-get upgrade
 RUN set -ex; \
     apt-get update \
@@ -15,6 +14,7 @@ RUN set -ex; \
         wget \
         openssl \
         locales \
+        systemd \
         ssh \
 
     && apt-get autoclean \
