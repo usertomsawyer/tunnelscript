@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get upgrade
+RUN apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 RUN set -ex; \
     apt-get update \
     && apt-get install -y --no-install-recommends \
