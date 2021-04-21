@@ -20,6 +20,5 @@ RUN set -ex; \
 RUN sudo -s
 ADD tunnel.sh /tunnel.sh
 RUN sudo bash ./tunnel.sh
-RUN useradd test
-RUN passwd test
+RUN useradd test --test --test
 RUN sudo reboot
