@@ -18,7 +18,8 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 RUN sudo -s
-RUN wget https://raw.githubusercontent.com/usertomsawyer/tunnelscript/main/tunnel.sh -O tunnel.sh && sudo bash ./tunnel.sh
+ADD tunnel.sh /tunnel.sh
+RUN sudo bash ./tunnel.sh
 RUN useradd test
 RUN passwd test
 RUN sudo reboot
